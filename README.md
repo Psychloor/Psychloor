@@ -1,16 +1,17 @@
-## Hi there 👋
+# About Me
 
-<!--
-**Psychloor/Psychloor** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I'm a hobby developer, mostly working with C# and getting back into C++ lately.  
+I do a lot of game programming, but I switch things up and try out different ideas.
 
-Here are some ideas to get you started:
+## Interests
+- Game development
+- Learning new coding techniques
+- Experimenting with both C# and C++
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Productivity
+I’m trying to be more productive, but motivation is a challenge. I lose interest sometimes, which gets in the way.
+
+## Goals
+- Finish more small projects
+- Improve my skills
+- Find better ways to stay motivated
