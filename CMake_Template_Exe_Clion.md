@@ -1,3 +1,4 @@
+```cmake
 cmake_minimum_required(VERSION ${CMAKE_MAJOR_VERSION}.${CMAKE_MINOR_VERSION})
 
 project(${PROJECT_NAME}
@@ -103,3 +104,4 @@ else ()
             COMMAND_EXPAND_LISTS
     )
 endif ()
+```
