@@ -34,6 +34,10 @@ target_sources(${PROJECT_NAME}
         FILES ${PROJECT_HEADERS}
 )
 
+target_include_directories(${PROJECT_NAME} PUBLIC
+        include/
+)
+
 # Require standard from target side (modern style)
 target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_${CMAKE_LANGUAGE_VERSION})
 
