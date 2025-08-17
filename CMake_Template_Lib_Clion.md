@@ -20,18 +20,17 @@ option(ENABLE_UNITY "Enable unity/jumbo builds for faster compilation" OFF)
 option(ENABLE_SANITIZERS "Enable Address/Undefined sanitizers for Clang/GCC (non-MSVC)" OFF)
 
 # Organize targets in IDEs (CLion, VS, Xcode, etc.)
-#set_property(GLOBAL PROPERTY USE_FOLDERS ON)
+set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
 # ---------------- SOURCE COLLECTION ----------------
-file(GLOB_RECURSE PROJECT_SOURCES CONFIGURE_DEPENDS
-        src/*.cpp
-        src/*.cxx
-        src/*.cc
+set(PROJECT_SOURCES
+        # Add source files here
+        # src/my_class.cpp
 )
 
-file(GLOB_RECURSE PROJECT_HEADERS CONFIGURE_DEPENDS
-        include/*.hpp
-        include/*.h
+set(PROJECT_HEADERS
+        # Add header files here
+        # include/my_class.hpp
 )
 
 # ---------------- LIBRARY ----------------
