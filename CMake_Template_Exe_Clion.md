@@ -18,20 +18,20 @@ option(ENABLE_WARNINGS_AS_ERRORS "Treat warnings as errors" OFF)
 option(ENABLE_UNITY "Enable unity/jumbo builds for faster compilation" OFF)
 option(ENABLE_SANITIZERS "Enable Address/Undefined sanitizers for Clang/GCC (non-MSVC)" OFF)
 
-# Collect source files (recursively)
-file(GLOB_RECURSE PROJECT_SOURCES CONFIGURE_DEPENDS
-        src/*.cpp
-        src/*.cxx
-        src/*.cc
+# ---------------- SOURCE COLLECTION ----------------
+set(PROJECT_SOURCES
+        # Add source files here
+        # src/my_class.cpp
+        ${CMAKE_DEFAULT_PROJECT_FILE}
 )
 
-file(GLOB_RECURSE PROJECT_HEADERS CONFIGURE_DEPENDS
-        include/*.hpp
-        include/*.h
+set(PROJECT_HEADERS
+        # Add header files here
+        # include/my_class.hpp
 )
 
 # Create the executable
-add_executable(${PROJECT_NAME} ${CMAKE_DEFAULT_PROJECT_FILE})
+add_executable(${PROJECT_NAME})
 
 # Use modern FILE_SET to group headers
 target_sources(${PROJECT_NAME}
@@ -104,4 +104,5 @@ else ()
             COMMAND_EXPAND_LISTS
     )
 endif ()
+
 ```
