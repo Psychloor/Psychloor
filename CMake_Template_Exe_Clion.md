@@ -96,7 +96,7 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
 if (CMAKE_VERSION VERSION_LESS 3.21)
     message(WARNING "Copying runtime libraries next to the executable requires CMake 3.21+. Skipping.")
 else ()
-    add_custom_command(TARGET mc_clone POST_BUILD
+    add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
             COMMAND ${CMAKE_COMMAND} -E
             $<IF:$<BOOL:$<TARGET_RUNTIME_DLLS:${PROJECT_NAME}>>,copy_if_different,echo>
             # Sources list (only present if there are DLLs)
